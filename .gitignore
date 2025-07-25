@@ -1,7 +1,7 @@
 /autosave/req/
 /autosave/save/
-#/as/req/
-#/as/save/
+/as/req/
+/as/save/
 .vscode/
 records.dbl
 /iocBoot/iocnsls2em/envPaths
