@@ -4,8 +4,9 @@
 /as/save/
 .vscode/
 records.dbl
-/iocBoot/iocnsls2em/envPaths
+/iocBoot/ioczebra/envPaths
 /config
+lib/
 *.swo
 *.swp
 O.*
