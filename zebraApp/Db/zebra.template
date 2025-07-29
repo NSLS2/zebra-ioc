@@ -12799,6 +12799,15 @@ record(waveform, "$(P)$(Q):PC_TIME") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_TIME": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 1
+      }
+    }
+  })
 }
 
 record(waveform, "$(P)$(Q):PC_SYS1") {
@@ -12808,6 +12817,15 @@ record(waveform, "$(P)$(Q):PC_SYS1") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_SYS1": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 6
+      }
+    }
+  })
 }
 
 record(waveform, "$(P)$(Q):PC_SYS2") {
@@ -12817,6 +12835,15 @@ record(waveform, "$(P)$(Q):PC_SYS2") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_SYS2": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 7
+      }
+    }
+  })
 }
 
 record(waveform, "$(P)$(Q):PC_DIV1") {
@@ -12826,6 +12853,15 @@ record(waveform, "$(P)$(Q):PC_DIV1") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_DIV1": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 8
+      }
+    }
+  })
 }
 
 record(ai, "$(P)$(Q):PC_DIV1_LAST") {
@@ -12842,6 +12878,15 @@ record(waveform, "$(P)$(Q):PC_DIV2") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_DIV2": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 9
+      }
+    }
+  })
 }
 
 record(ai, "$(P)$(Q):PC_DIV2_LAST") {
@@ -12858,6 +12903,15 @@ record(waveform, "$(P)$(Q):PC_DIV3") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_DIV3": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 10
+      }
+    }
+  })
 }
 
 record(ai, "$(P)$(Q):PC_DIV3_LAST") {
@@ -12874,6 +12928,15 @@ record(waveform, "$(P)$(Q):PC_DIV4") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_DIV4": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 11
+      }
+    }
+  })
 }
 
 record(ai, "$(P)$(Q):PC_DIV4_LAST") {
@@ -13800,6 +13863,15 @@ record(waveform, "$(P)$(Q):PC_ENC1") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_ENC1": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 2
+      }
+    }
+  })
 }
 
 record(waveform, "$(P)$(Q):PC_ENC2") {
@@ -13809,6 +13881,15 @@ record(waveform, "$(P)$(Q):PC_ENC2") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_ENC2": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 3
+      }
+    }
+  })
 }
 
 record(waveform, "$(P)$(Q):PC_ENC3") {
@@ -13818,6 +13899,15 @@ record(waveform, "$(P)$(Q):PC_ENC3") {
   field(FTVL, "DOUBLE")
   field(SCAN, "I/O Intr")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_ENC3": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 4
+      }
+    }
+  })
 }
 
 # This one updates last, so forward link to PC_NUM_DOWN
@@ -13829,6 +13919,15 @@ record(waveform, "$(P)$(Q):PC_ENC4") {
   field(SCAN, "I/O Intr")
   field(FLNK, "$(P)$(Q):PC_NUM_DOWN")
   info(autosaveFields_pass0, "VAL")
+  info(Q:group, {
+    "$(P)$(Q):DataTable": {
+      "value.PC_ENC4": {
+        +type: "plain",
+        +channel: "VAL",
+        +putorder: 5
+      }
+    }
+  })
 }
 
 # % archiver 10 Monitor
@@ -14087,4 +14186,17 @@ record(calcout, "$(P)$(Q):MAV:MRES") {
   field(INPC, "$(P)$(Q):M3:MRES CP")
   field(INPD, "$(P)$(Q):M4:MRES CP")
   info(autosaveFields_pass0, "VAL")
+}
+
+record(aai, "$(P)$(Q):DataTableLabels_") {
+    field(FTVL, "STRING")
+    field(NELM, "11")
+    field(INP , {const:["TIME", "ENC1", "ENC2", "ENC3", "ENC4", "SYS1", "SYS2", "DIV1", "DIV2", "DIV3", "DIV4"]})
+    info(Q:group, {
+        "$(P)$(Q):DataTable":{
+            +id:"epics:nt/NTTable:1.0",
+            "labels":{+type:"plain", +channel:"VAL"}
+        }
+    })
+    field(TPRO, "1")
 }

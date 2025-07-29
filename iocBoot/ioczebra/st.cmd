@@ -4,11 +4,11 @@
 ## everywhere it appears in this file
 
 < envPaths
-< /epics/common/xf05idd-ioc1-netsetup.cmd
+< /epics/common/xf31id1-lab3-ioc1-netsetup.cmd
 
 cd "$(TOP)"
 
-epicsEnvSet("ENGINEER", "Jun Ma x3119")
+epicsEnvSet("ENGINEER", "C. Engineer")
 epicsEnvSet("LOCATION", "XF:05IDD{RG:D3}")
 
 ## Register all support components
@@ -23,7 +23,8 @@ zebra_registerRecordDeviceDriver(pdbbase)
 
 #drvAsynIPPortConfigure("ty_zebra","xf05idd-tsrv3.nsls2.bnl.local:4014")
 #drvAsynIPPortConfigure("ty_zebra","xf05idd-tsrv5.nsls2.bnl.local:4001")
-drvAsynIPPortConfigure("ty_zebra","xf05idd-tsrv4.nsls2.bnl.local:4007")
+#drvAsynIPPortConfigure("ty_zebra","xf05idd-tsrv4.nsls2.bnl.local:4007")
+drvAsynIPPortConfigure("ty_zebra","xf31id1-lab3-tsrv1.nsls2.bnl.local:4004")
 
 #zebraConfig(Port, SerialPort, MaxPosCompPoints)
 zebraConfig("ZEBRA", "ty_zebra", 100000)

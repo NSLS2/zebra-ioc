@@ -40,6 +40,7 @@ zebra_DBD += asSupport.dbd
 zebra_DBD += busySupport.dbd
 zebra_DBD += zebraSupport.dbd
 zebra_DBD += devIocStats.dbd
+zebra_DBD += reccaster.dbd
 zebra_SRCS += zebra_registerRecordDeviceDriver.cpp
 #zebra_LIBS += zebra
 zebra_LIBS += busy
@@ -48,8 +49,17 @@ zebra_LIBS += motor
 zebra_LIBS += asyn
 zebra_LIBS += autosave
 zebra_LIBS += devIocStats
+zebra_LIBS += reccaster
 zebra_LIBS += $(EPICS_BASE_IOC_LIBS)
 zebra_SRCS += zebraMain.cpp
+
+# Link QSRV (pvAccess Server) if available
+ifdef EPICS_QSRV_MAJOR_VERSION
+    zebra_LIBS += qsrv
+    zebra_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+    zebra_DBD += PVAServerRegister.dbd
+    zebra_DBD += qsrv.dbd
+endif
 
 DATA += zebra_sim.py
 
